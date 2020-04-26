@@ -17,7 +17,7 @@ from django.shortcuts import render
 from django.template import TemplateDoesNotExist
 from django.template.loader import select_template
 from django.utils.encoding import iri_to_uri, force_text
-from django.utils.functional import curry
+from functools import partial as curry
 from django.utils.translation import ugettext_lazy as _, get_language, get_language_info
 from urllib.parse import urlencode, urlparse
 from hvad.forms import TranslatableModelForm, translatable_inlineformset_factory, translatable_modelform_factory
